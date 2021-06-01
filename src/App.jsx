@@ -4,10 +4,20 @@ import Display from "./components/Display";
 import "./App.css";
 
 function App() {
-  const [stack, setStack] = useState("0");
+  const [stack, setStack] = useState("");
 
   const clickHandler = (text) => {
-    setStack(text);
+    if (text) {
+      setStack(`${stack}${text}`);
+    }
+  };
+
+  const onClear = () => {
+    setStack("");
+  };
+
+  const onClickEqual = () => {
+    setStack(eval(stack).toString());
   };
 
   useEffect(() => {
@@ -19,8 +29,8 @@ function App() {
       <Display displayText={stack} />
       <Keypad
         clickHandler={clickHandler}
-        onClickEqual={clickHandler}
-        onClear={clickHandler}
+        onClickEqual={onClickEqual}
+        onClear={onClear}
       />
     </main>
   );
