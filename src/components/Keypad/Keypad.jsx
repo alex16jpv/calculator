@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Button from "../Button";
 
 const Keypad = ({ clickHandler, onClickEqual, onClear }) => {
@@ -41,6 +42,12 @@ const Keypad = ({ clickHandler, onClickEqual, onClear }) => {
       </div>
     </section>
   );
+};
+
+Keypad.propTypes = {
+  clickHandler: PropTypes.func,
+  onClickEqual: PropTypes.func,
+  onClear: PropTypes.func,
 };
 
 export default Keypad;
