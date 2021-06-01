@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Button from "./components/Button";
+import Display from "./components/Display";
 import "./App.css";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
 
   return (
     <main className="calculator">
-      <section className="calculator__display">{stack}</section>
+      <Display displayText={stack} />
       <section className="calculator__keypad">
         <div className="calculator__input-keys">
           <div className="calculator__function-keys">
