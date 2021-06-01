@@ -1,3 +1,4 @@
+import Button from "./components/Button";
 import "./App.css";
 
 function App() {
@@ -7,31 +8,31 @@ function App() {
       <section className="calculator__keypad">
         <div className="calculator__input-keys">
           <div className="calculator__function-keys">
-            <button className="calculator-key">C</button>
-            <button className="calculator-key">+/-</button>
-            <button className="calculator-key">%</button>
+            <Button text="C" />
+            <Button text="+/-" />
+            <Button text="%" />
           </div>
           <div className="calculator__digit-keys">
-            <button className="calculator-key">7</button>
-            <button className="calculator-key">8</button>
-            <button className="calculator-key">9</button>
-            <button className="calculator-key">4</button>
-            <button className="calculator-key">5</button>
-            <button className="calculator-key">6</button>
-            <button className="calculator-key">1</button>
-            <button className="calculator-key">2</button>
-            <button className="calculator-key">3</button>
-            <button className="calculator-key">00</button>
-            <button className="calculator-key">0</button>
-            <button className="calculator-key">.</button>
+            <Button text="7" />
+            <Button text="8" />
+            <Button text="9" />
+            <Button text="4" />
+            <Button text="5" />
+            <Button text="6" />
+            <Button text="1" />
+            <Button text="2" />
+            <Button text="3" />
+            <Button text="00" />
+            <Button text="0" />
+            <Button text="." />
           </div>
         </div>
         <div className="calculator__operator-keys">
-          <button className="calculator-key">/</button>
-          <button className="calculator-key">*</button>
-          <button className="calculator-key">-</button>
-          <button className="calculator-key">+</button>
-          <button className="calculator-key">=</button>
+          <Button text="/" />
+          <Button text="*" />
+          <Button text="-" />
+          <Button text="+" />
+          <Button text="=" />
         </div>
       </section>
     </main>
