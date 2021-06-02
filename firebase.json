@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "alexpvalencia-calculator-jpv",
     "public": "build",
     "ignore": [
       "firebase.json",
