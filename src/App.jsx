@@ -1,3 +1,4 @@
+/* eslint no-eval: 0 */
 import { useState, useEffect } from "react";
 import Keypad from "./components/Keypad";
 import Display from "./components/Display";
